@@ -1,0 +1,169 @@
+2019-11-08 17:40:02,307 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 17:40:02,317 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 17:40:02,319 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 17:40:02,922 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 127.0.0.1:11001.
+2019-11-08 17:40:02,922 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 17:40:02,922 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 17:40:16,282 [7] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-08 17:40:16,282 [7] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-08 17:40:23,354 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 17:40:23,368 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 17:40:23,370 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 17:40:24,155 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 127.0.0.1:11001.
+2019-11-08 17:40:24,155 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 17:40:24,155 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 17:56:40,771 [4] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-08 17:56:40,771 [4] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-08 17:56:49,891 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 17:56:49,901 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 17:56:49,901 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 17:56:50,514 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 127.0.0.1:11001.
+2019-11-08 17:56:50,514 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 17:56:50,514 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 17:56:57,081 [7] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-08 17:56:57,081 [7] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-08 17:59:20,199 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 17:59:20,215 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 17:59:20,217 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 17:59:20,959 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 127.0.0.1:11001
+2019-11-08 17:59:20,961 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 17:59:20,961 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:02:11,668 [4] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-08 18:02:11,668 [4] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-08 18:02:41,784 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 18:02:41,800 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 18:02:41,800 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 18:02:42,552 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 10.12.56.12:80
+2019-11-08 18:02:42,552 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 18:02:42,552 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:02:55,009 [1] INFO WRPServer.Network.Server - Pripojil se novy klient!
+2019-11-08 18:02:55,032 [1] ERROR WRPServer.Network.Server - Pri inicializaci naslouchání nastala chyba.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WRPServer.Network.Server.start() in C:\Users\Teacher\Documents\WRPServer\src\Network\Server.cs:line 53
+2019-11-08 18:03:08,800 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 18:03:08,814 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 18:03:08,814 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 18:03:09,562 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 10.12.56.12:80
+2019-11-08 18:03:09,562 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 18:03:09,562 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:03:13,939 [1] INFO WRPServer.Network.Server - Pripojil se novy klient!
+2019-11-08 18:03:13,947 [1] ERROR WRPServer.Network.Server - Pri inicializaci naslouchání nastala chyba.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WRPServer.Network.Server.start() in C:\Users\Teacher\Documents\WRPServer\src\Network\Server.cs:line 53
+2019-11-08 18:03:18,667 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 18:03:18,679 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 18:03:18,681 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 18:03:19,428 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 10.12.56.12:80
+2019-11-08 18:03:19,428 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 18:03:19,428 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:03:19,636 [6] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-08 18:03:19,636 [6] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-08 18:03:26,943 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 18:03:26,955 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 18:03:26,957 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 18:03:27,700 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 10.12.56.12:80
+2019-11-08 18:03:27,700 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 18:03:27,700 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:03:30,557 [1] INFO WRPServer.Network.Server - Pripojil se novy klient!
+2019-11-08 18:03:30,571 [1] ERROR WRPServer.Network.Server - Pri inicializaci naslouchání nastala chyba.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WRPServer.Network.Server.start() in C:\Users\Teacher\Documents\WRPServer\src\Network\Server.cs:line 53
+2019-11-08 18:03:44,337 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 18:03:44,347 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 18:03:44,349 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 18:03:44,960 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 10.12.56.12:80
+2019-11-08 18:03:44,960 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 18:03:44,960 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:03:47,011 [1] INFO WRPServer.Network.Server - Pripojil se novy klient!
+2019-11-08 18:03:47,012 [1] ERROR WRPServer.Network.Server - Pri inicializaci naslouchání nastala chyba.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WRPServer.Network.Server.start() in C:\Users\Teacher\Documents\WRPServer\src\Network\Server.cs:line 53
+2019-11-08 18:04:19,281 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 18:04:19,293 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 18:04:19,295 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 18:04:20,080 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 10.12.56.12:80
+2019-11-08 18:04:20,080 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 18:04:20,080 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:04:21,962 [1] INFO WRPServer.Network.Server - Pripojil se novy klient!
+2019-11-08 18:04:21,962 [1] INFO WRPServer.Network.Server - Predavam obsluhu noveho klienta do dedikovaneho vlakna.
+2019-11-08 18:04:21,964 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:04:21,968 [6] INFO WRPServer.Network.ClientHandler - Vlákno na obsluhu klienta bylo spušteno
+2019-11-08 18:04:21,970 [6] DEBUG WRPServer.Network.ClientHandler - Nastavuji objekty pro cteni klientskeho socketu.
+2019-11-08 18:04:21,970 [6] DEBUG WRPServer.Network.ClientHandler - Proxy objekty NetworkStream a BinaryReader pro cteni klientskeho Socketu uspesne vytvoreny.
+2019-11-08 18:04:21,970 [6] INFO WRPServer.Network.ClientHandler - Klient bude uspán na 10s
+2019-11-08 18:04:31,972 [6] INFO WRPServer.Network.ClientHandler - Klient bude uspán na 10s
+2019-11-08 18:04:41,666 [4] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-08 18:04:41,666 [4] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-08 18:19:35,591 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 18:19:35,605 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 18:19:35,605 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 18:19:36,369 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 10.12.56.12:80
+2019-11-08 18:19:36,369 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 18:19:36,369 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:19:40,995 [1] INFO WRPServer.Network.Server - Pripojil se novy klient!
+2019-11-08 18:19:40,995 [1] INFO WRPServer.Network.Server - Predavam obsluhu noveho klienta do dedikovaneho vlakna.
+2019-11-08 18:19:40,999 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:19:41,005 [6] INFO WRPServer.Network.ClientHandler - Vlákno na obsluhu klienta bylo spušteno
+2019-11-08 18:19:41,007 [6] DEBUG WRPServer.Network.ClientHandler - Nastavuji objekty pro cteni klientskeho socketu.
+2019-11-08 18:19:41,007 [6] DEBUG WRPServer.Network.ClientHandler - Proxy objekty NetworkStream a BinaryReader pro cteni klientskeho Socketu uspesne vytvoreny.
+2019-11-08 18:19:41,007 [6] INFO WRPServer.Network.ClientHandler - Klient bude uspán na 10s
+2019-11-08 18:19:43,214 [8] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-08 18:19:43,214 [8] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-08 18:19:52,813 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 18:19:52,827 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 18:19:52,829 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 18:19:53,576 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 10.12.56.12:80
+2019-11-08 18:19:53,576 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 18:19:53,576 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:19:55,755 [6] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-08 18:19:55,755 [6] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-08 18:20:00,082 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 18:20:00,093 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 18:20:00,093 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 18:20:00,681 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 10.12.56.12:80
+2019-11-08 18:20:00,681 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 18:20:00,681 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:20:03,717 [1] INFO WRPServer.Network.Server - Pripojil se novy klient!
+2019-11-08 18:20:03,717 [1] INFO WRPServer.Network.Server - Predavam obsluhu noveho klienta do dedikovaneho vlakna.
+2019-11-08 18:20:03,719 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 18:20:03,721 [6] INFO WRPServer.Network.ClientHandler - Vlákno na obsluhu klienta bylo spušteno
+2019-11-08 18:20:03,721 [6] DEBUG WRPServer.Network.ClientHandler - Nastavuji objekty pro cteni klientskeho socketu.
+2019-11-08 18:20:03,723 [6] DEBUG WRPServer.Network.ClientHandler - Proxy objekty NetworkStream a BinaryReader pro cteni klientskeho Socketu uspesne vytvoreny.
+2019-11-08 18:20:03,723 [6] INFO WRPServer.Network.ClientHandler - Klient bude uspán na 10s
+2019-11-08 18:20:04,764 [7] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-08 18:20:04,765 [7] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-08 19:39:51,679 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 19:39:51,693 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 19:39:51,695 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 19:40:02,806 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 19:40:02,816 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 19:40:02,817 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 19:40:20,774 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-08 19:40:20,786 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-08 19:40:20,788 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-08 19:40:21,568 [1] INFO WRPServer.Network.Server - Inicializuji datove struktury socketu pro 10.12.56.12:80
+2019-11-08 19:40:21,569 [1] INFO WRPServer.Network.Server - Vstupuji do smycky pro prijimani klientu.
+2019-11-08 19:40:21,569 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 19:40:27,584 [1] INFO WRPServer.Network.Server - Pripojil se novy klient!
+2019-11-08 19:40:27,585 [1] INFO WRPServer.Network.Server - Predavam obsluhu noveho klienta do dedikovaneho vlakna a dál se o nej nestarám
+2019-11-08 19:40:27,586 [1] INFO WRPServer.Network.Server - Cekam na pripojeni klienta.
+2019-11-08 19:40:27,589 [7] INFO WRPServer.Network.ClientHandler - Vlákno na obsluhu klienta císlo 1273216333 bylo spušteno
+2019-11-08 19:40:27,589 [7] DEBUG WRPServer.Network.ClientHandler - Nastavuji objekty pro cteni klientskeho socketu.
+2019-11-08 19:40:27,590 [7] DEBUG WRPServer.Network.ClientHandler - Proxy objekty NetworkStream a BinaryReader pro cteni klientskeho Socketu uspesne vytvoreny.
+2019-11-08 19:40:27,590 [7] INFO WRPServer.Network.ClientHandler - Klient bude uspán na 10s
+2019-11-08 19:40:33,035 [8] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-08 19:40:33,035 [8] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-11 17:29:18,022 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-11 17:29:18,033 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-11 17:29:18,036 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-11 17:29:18,042 [1] INFO WRPServer.Network.Server.ServerSocket - Inicializuji datove struktury socketu pro 127.0.0.1:11001.
+2019-11-11 17:29:18,043 [1] INFO WRPServer.Network.Server.ServerSocket - Vstupuji do smycky pro prijimani klientu.
+2019-11-11 17:29:18,044 [1] INFO WRPServer.Network.Server.ServerSocket - Cekam na pripojeni klienta.
+2019-11-11 17:32:13,218 [4] INFO WRPServer.Program - Volan shutdown hook.
+2019-11-11 17:32:13,218 [4] INFO WRPServer.Program - Aplikace bude ukoncena.
+2019-11-12 14:57:22,507 [1] INFO WRPServer.Program - Spoustim aplikaci.
+2019-11-12 14:57:22,523 [1] INFO WRPServer.Program - Pripravuji zachycení Control+C pro vypnutí
+2019-11-12 14:57:22,527 [1] INFO WRPServer.Program - Spoustim rídící aplikaci a predávám jí velení
+2019-11-12 14:57:22,555 [1] INFO WRPServer.Network.Server.ServerSocket - Inicializuji datove struktury socketu pro 127.0.0.1:11001.
+2019-11-12 14:57:22,555 [1] INFO WRPServer.Network.Server.ServerSocket - Vstupuji do smycky pro prijimani klientu.
+2019-11-12 14:57:22,555 [1] INFO WRPServer.Network.Server.ServerSocket - Cekam na pripojeni klienta.
