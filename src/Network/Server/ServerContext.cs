@@ -71,27 +71,6 @@ namespace WRPServer.Network.Server
         }
 
         /// <summary>
-        /// Vypíše připojené kamery do XML (ASCII kódování), které je vráceno ve stringu.
-        /// V případě chyby při tvoření výpisu je vygenerována chybová hláška.
-        /// </summary>
-        /// <returns>String obsahující XML s výpisem kamer. V případě chyby je místo XML vrácena chybová hláška.</returns>
-        public string ListDevicesAsXml()
-        {
-        
-            List<Device> devices;
-            try
-            {
-                devices = CameraManager.EnumerateDevices();
-            }
-            catch (Exception e)
-            {
-                devices = new List<Device>();
-                log.Error("Nastal problem pri vylistovani kamer", e);
-            }
-            return CreateDevicesXml(devices);
-        }
-
-        /// <summary>
         /// Okamžitě uvolní veškeré prostředky alokované Pylon knihovnou (uzavře kamery a terminuje knihovnu).
         /// Metoda nebere ohled na běžící vlákna používající kamery.
         /// Metoda je určená pouze k nouzovému vrácení prostředků po volání shutdown hook nebo po detekci neodchycené výjimky.
@@ -226,80 +205,6 @@ namespace WRPServer.Network.Server
         //            return false;
         //        }
         //    }
-        //}
-
-        private string CreateDevicesXml(List<Device> devices)
-        {
-            // Zalozit XML
-            XmlDocument doc = new XmlDocument();
-            // XML deklarace
-            XmlDeclaration xmlDeclaration = doc.CreateXmlDeclaration("1.0", "US-ASCII", null);
-            XmlElement root = doc.DocumentElement;
-            doc.InsertBefore(xmlDeclaration, root);
-            // Response
-            XmlElement responseElement = doc.CreateElement(string.Empty, "Response", string.Empty);
-            doc.AppendChild(responseElement);
-            // Cameras
-            XmlElement camerasElement = doc.CreateElement(string.Empty, "Cameras", string.Empty);
-            responseElement.AppendChild(camerasElement);
-        
-            foreach (Device d in devices)
-            {
-                // Camera XML
-                XmlElement cameraElement = doc.CreateElement(string.Empty, "Camera", string.Empty);
-                // Vlastnosti kamery
-                // Device ID
-                XmlElement deviceIdElement = doc.CreateElement(string.Empty, "SerialNumber", string.Empty);
-                XmlText deviceIdtext = doc.CreateTextNode(d.SerialID.ToString());
-                deviceIdElement.AppendChild(deviceIdtext);
-                cameraElement.AppendChild(deviceIdElement);
-                // VendorName
-                XmlElement vendorNameElement = doc.CreateElement(string.Empty, "VendorName", string.Empty);
-                XmlText vendorNameText = doc.CreateTextNode(d.VendorName);
-                vendorNameElement.AppendChild(vendorNameText);
-                cameraElement.AppendChild(vendorNameElement);
-                // ModelName
-                XmlElement modelNameElement = doc.CreateElement(string.Empty, "ModelName", string.Empty);
-                XmlText modelNameText = doc.CreateTextNode(d.ModelName);
-                modelNameElement.AppendChild(modelNameText);
-                cameraElement.AppendChild(modelNameElement);
-                // Pridani kamery do XML
-                camerasElement.AppendChild(cameraElement);
-            }
-            using (var stringWriter = new StringWriter())
-            using (var xmlTextWriter = XmlWriter.Create(stringWriter))
-            {
-                doc.WriteTo(xmlTextWriter);
-                xmlTextWriter.Flush();
-                return (stringWriter.GetStringBuilder().ToString());
-            }
-        }
-
-        //private string GetParamAsString(PylonC.NET.PYLON_DEVICE_HANDLE hDev, string featureName)
-        //{
-        //    // Strom nastaveni
-        //    PylonC.NET.NODEMAP_HANDLE hNodeMap;
-        //    // Uzel ve stromu nastaveni
-        //    PylonC.NET.NODE_HANDLE hNode;
-        //
-        //    // Strom nastaveni pro zadanou kameru
-        //    hNodeMap = PylonC.NET.Pylon.DeviceGetNodeMap(hDev);
-        //    // Uzel pro pozadovane nastaveni kamery
-        //    hNode = PylonC.NET.GenApi.NodeMapGetNode(hNodeMap, featureName);
-        //
-        //    // Pokud pozadovany uzel neexistuje
-        //    if (!hNode.IsValid)
-        //    {
-        //        return "";
-        //    }
-        //    // Pokud pozadovany uzel neni citelny
-        //    if (!PylonC.NET.GenApi.NodeIsReadable(hNode))
-        //    {
-        //
-        //        return "";
-        //    }
-        //    string valueString = PylonC.NET.GenApi.NodeToString(hNode);
-        //    return valueString;
         //}
     }
 }

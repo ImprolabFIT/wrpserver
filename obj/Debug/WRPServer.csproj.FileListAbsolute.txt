@@ -11,3 +11,14 @@ C:\Users\Teacher\Documents\WRPServer\bin\Debug\Multimedia.dll
 C:\Users\Teacher\Documents\WRPServer\bin\Debug\ThermoLib.dll
 C:\Users\Teacher\Documents\WRPServer\bin\Debug\log4net.dll
 C:\Users\Teacher\Documents\WRPServer\bin\Debug\log4net.xml
+C:\Users\Kasape\Documents\wrp-server\bin\Debug\WRPServer.exe.config
+C:\Users\Kasape\Documents\wrp-server\bin\Debug\WRPServer.exe
+C:\Users\Kasape\Documents\wrp-server\bin\Debug\WRPServer.pdb
+C:\Users\Kasape\Documents\wrp-server\bin\Debug\log4net.dll
+C:\Users\Kasape\Documents\wrp-server\bin\Debug\log4net.xml
+C:\Users\Kasape\Documents\wrp-server\obj\Debug\WRPServer.csproj.CopyComplete
+C:\Users\Kasape\Documents\wrp-server\obj\Debug\WRPServer.exe
+C:\Users\Kasape\Documents\wrp-server\obj\Debug\WRPServer.pdb
+C:\Users\Kasape\Documents\wrp-server\bin\Debug\PvDotNet.dll
+C:\Users\Kasape\Documents\wrp-server\bin\Debug\PvDotNet.xml
+C:\Users\Kasape\Documents\wrp-server\obj\Debug\WRPServer.csprojAssemblyReference.cache

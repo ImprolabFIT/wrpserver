@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
+﻿using System.Configuration;
+using System.Xml;
 using WIC_SDK;
 
-/// <summary>
-/// Třída je převzatá z ukázkového kódu pro .NET z Basler Pylon examples
-/// a následně modifikována.
-/// </summary>
 namespace WRPServer.Cameras
 
 {
@@ -17,47 +12,39 @@ namespace WRPServer.Cameras
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         private static readonly CameraCenter cameraCenter = new CameraCenter(ConfigurationManager.AppSettings["folderLicencePath"]);
-        /// <summary>
-        /// Drží data o zařízení.
-        /// </summary>
-        public class Device
-        {
-            // Serial ID zařízení
-            public string SerialID;
-            // Jméno výrobce (značka kamery)
-            public string VendorName;
-            // Model kamery
-            public string ModelName;
-            // Maximální šířka rozlišení
-            public int Width;
-            // Maximální výška rozlišení
-            public int Height;
-        }
 
-        /// <summary>
-        /// Vylistuje všechny připojené zařízení.
-        /// </summary>
-        /// <returns>
-        /// List, ve kterém je pro každé zařízení instance Device.
-        /// Device obsahuje informace o SerialID a aktuálním ID (jde o pořadí ve vylistování).
-        /// </returns>
-        public static List<Device> EnumerateDevices()
+        public static Camera GetCameraBySerialNumber(string serialNumber)
         {
-            // Nový List
-            List<Device> list = new List<Device>();
-
-            uint i = 0;
             foreach (Camera cam in cameraCenter.Cameras)
             {
-                Device device = new Device();
-                device.SerialID = cam.SerialNumber;
-                device.VendorName = cam.VendorName;
-                device.ModelName= cam.ModelName;
-                device.Width = cam.Width;
-                device.Height = cam.Height;
-                list.Add(device);
+                if(cam.SerialNumber == serialNumber)
+                {
+                    return cam;
+                }
             }
-            return list;
+            return null;
+        }
+
+        public static string GetCameraListXML()
+        {
+            XmlDocument doc = new XmlDocument();
+            XmlElement elCameras = (XmlElement)doc.AppendChild(doc.CreateElement("Cameras"));
+
+            foreach (Camera cam in cameraCenter.Cameras)
+            {
+                XmlElement elCamera = (XmlElement)doc.CreateElement("Camera");
+                elCamera.SetAttribute("Width", cam.Width.ToString());
+                elCamera.SetAttribute("Height", cam.Height.ToString());
+                elCamera.SetAttribute("CameraMaxFPS", cam.CameraMaxFPS.ToString());
+                elCamera.SetAttribute("Version", cam.Version);
+                elCamera.SetAttribute("ModelName", cam.ModelName);
+                elCamera.SetAttribute("ManufacturerInfo", cam.ManufacturerInfo);
+                elCamera.SetAttribute("SerialNumber", cam.SerialNumber);
+                elCamera.SetAttribute("VendorName", cam.VendorName);
+                elCameras.AppendChild(elCamera);
+            }
+
+            return doc.OuterXml;
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Net.Sockets;
 using System.IO;
 using System.Configuration;
@@ -22,35 +22,31 @@ namespace WRPServer.Network.Client
 
         // Aktuální stav klienta
         public ClientState clientState;
+        // Stav nasledujici po aktualni akci
+        public ClientState nextState;
 
         // Flag, který značí, zda si klient přeje pokračovat v komunikaci.
         // Flag je nastaven na true, dokud není přijata CLOSE action.
         // Použit je v centrální komunikační smyčce HandleClient, kde ovládá, zda má obsluha pokračovat nebo skončit.
         public bool continueCommunication;
 
-        // Unikátní ID, kterým se klient ohlašuje. 
-        // Toto ID klient dostává při začátku komunikace od ServerContext. Unikátní napříč běžící instancí aplikace.
-        public int clientId;
-
+        public MessageType receivedMessageType;
+        public UInt32 receivedPayloadLength;
+        
         // Buffer pro odchozí zprávy. 
         // Proměnná oPos udržuje aktuální pozici ve Bufferu (vždy ukazuje na první nezapsanou pozici).
         public int oPos;
         public byte[] outputBuffer = new byte[Convert.ToUInt32(ConfigurationManager.AppSettings["clientOutputBufferSize"])];
         public bool bufferReadyToSend = false;
 
-        // Kamery, které má klient vypůjčené. 
-        // Klient má k uzamčené kameře výhradní přístup.
-        // Slovník mapuje unikátní ID kamery na Proxy objekt kamery.
-        public Dictionary<int, Camera> cameras = new Dictionary<int, Camera>();
+        public WICGrabber grabber = null;
 
+        // Klientovi ID, které je mu přiřazeno serverem při prvním připojení
+        public int clientId;
         // Kontext pro continous grabbing.
-        // ID snímací kamery.
-        public int continuoslyGrabbingCameraId;
-        // Proxy objekt pro snímací vlákno.
-        public ContinuousGrabProvider continousGrabProvider;
         // Maximální ID nasnímaného obrázku.
-        public int maxImageId;
-        // Maximální ID nasnímaného obrázku, které klient potvrrdil.
-        public int maxAcknowledgedImageId;
+        public UInt32 maxImageId;
+        // Maximální ID nasnímaného obrázku, které klient potvrdil.
+        public UInt32 maxAcknowledgedImageId;
     }
 }

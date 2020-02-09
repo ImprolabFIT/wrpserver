@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Configuration;
 
 namespace WRPServer
 {
@@ -27,7 +28,6 @@ namespace WRPServer
         {
             // Spusti server
             log.Info("Spoustim aplikaci.");
-
 
             log.Info("Připravuji zachycení Control+C pro vypnutí");
             // Shutdown hooks 

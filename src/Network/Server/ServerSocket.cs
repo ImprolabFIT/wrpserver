@@ -13,6 +13,19 @@ namespace WRPServer.Network.Server
         public static ManualResetEvent allDone = new ManualResetEvent(false);
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
+        public static IPAddress GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip;
+                }
+            }
+            throw new Exception("No network adapters with an IPv4 address in the system!");
+        }
+
         /// <summary>
         /// Spustí pol
         /// </summary>
@@ -20,15 +33,14 @@ namespace WRPServer.Network.Server
         public static void StartListening(ServerContext serverCtx)
         {
             // Vytvorim lokalni interface - dvojici localhost:11001
-            IPAddress ipAddress;
-            IPAddress.TryParse(ConfigurationManager.AppSettings["serverIp"], out ipAddress);
-            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, Convert.ToInt32(ConfigurationManager.AppSettings["serverPort"]));
+            IPAddress ipAddress = GetLocalIPAddress();
+            Int32 port = Convert.ToInt32(ConfigurationManager.AppSettings["serverPort"]);
+            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, port);
 
             // TCP Server socket
-            
-            Socket listener = new Socket(AddressFamily.InterNetwork,
+            Socket listener = new Socket(ipAddress.AddressFamily,
                 SocketType.Stream, ProtocolType.Tcp);
-            log.Info("Inicializuji datove struktury socketu pro 127.0.0.1:11001.");
+            log.Info("Inicializuji datove struktury socketu pro "+ ipAddress.ToString()+":"+port);
             // Nabinduju server socket na lokalni interface
             try
             {
