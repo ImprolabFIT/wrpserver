@@ -54,9 +54,6 @@
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="Multimedia">
-      <HintPath>..\Multimedia.dll</HintPath>
-    </Reference>
     <Reference Include="PvDotNet, Version=4.0.8.3423, Culture=neutral, PublicKeyToken=666697f16d0ae86b, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\PvDotNet.dll</HintPath>
@@ -71,12 +68,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="ThermoLib">
-      <HintPath>..\ThermoLib.dll</HintPath>
-    </Reference>
-    <Reference Include="WIC_SDK, Version=1.1.17.73, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\WIC_SDK.dll</HintPath>
+    <Reference Include="WIC_SDK">
+      <HintPath>..\..\..\Documents\WIC_SDK.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
